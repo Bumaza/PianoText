@@ -270,6 +270,18 @@ public class Simulator {
          robot.keyPress(10);
          robot.keyRelease(10);
          System.out.println("restarted wpm");
+      } else if(text.equals("BACKSPACE")){
+         timeOverall = 0L;
+         lastTime = 0L;
+         robot.keyPress(8);
+         robot.keyRelease(8);
+         System.out.println("restarted wpm");
+      } else if(text.equals("ENTER")){
+         timeOverall = 0L;
+         lastTime = 0L;
+         robot.keyPress(10);
+         robot.keyRelease(10);
+         System.out.println("restarted wpm");
       } else {
          long diff = timestamp - lastTime;
          if (diff > sentence_threshold) {
