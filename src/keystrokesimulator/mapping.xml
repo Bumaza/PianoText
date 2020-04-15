@@ -1,0 +1,475 @@
+<?xml version=  '1.0' ?> 
+<!DOCTYPE mapping[ 
+ 	 <!ELEMENT mapping (letter|ngram|word)*> 
+	 <!ELEMENT letter (note)> 
+	 <!ELEMENT ngram (chord)> 
+	 <!ELEMENT word (chord)> 
+	 <!ELEMENT chord (cnote+)> 
+	 <!ELEMENT note EMPTY> 
+	 <!ELEMENT cnote EMPTY> <!-- note that forms a chord-->  
+ 
+	 <!ATTLIST letter name (a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z) #REQUIRED> 
+	 <!ATTLIST word name CDATA #REQUIRED> 
+	 <!ATTLIST ngram name CDATA #REQUIRED> 
+	 <!ATTLIST note name (ces|c|cis|des|d|dis|es|e|f|fis|ges|g|gis|as|a|ais|bes|b|SPACE) #REQUIRED> 
+	 <!ATTLIST note octave (0|1|2|3|4|5|6|7|8|-1) #REQUIRED> 
+	 <!ATTLIST cnote name (ces|c|cis|des|d|dis|es|e|f|fis|ges|g|gis|as|a|ais|bes|b) #REQUIRED> 
+	 <!ATTLIST cnote position (1|2|3|4|5) #REQUIRED> <!-- position of the note in the chord --> 
+	 ]> 
+ <mapping> <!-- nice chords left: D-FIS, GIS-C, A-C-E -->
+	<letter name='SPACE' > 
+	 	<note name='SPACE' octave='-1'  />
+		<note name='g' octave='3'  />
+		<note name='a' octave='3'  />
+		<note name='f' octave='3'  />
+		<note name='d' octave='6'  />
+	</letter>
+
+ 	<letter name='a' >
+	 	<note name='b' octave='3'  /> 
+	</letter> 
+	<letter name='b' > 
+	 	<note name='h' octave='4'  /> 
+	</letter> 
+	<letter name='c' > 
+	 	<note name='f' octave='4'  /> 
+	</letter> 
+	<letter name='d' > 
+	 	<note name='e' octave='4'  /> 
+	</letter> 
+	<letter name='e' > 
+	 	<note name='fis' octave='4'  /> 
+	</letter> sah
+	<letter name='f' > 
+	 	<note name='c' octave='4'  /> 
+	</letter> 
+	<letter name='g' > 
+	 	<note name='b' octave='4'  /> 
+	</letter> 
+	<letter name='h' > 
+	 	<note name='cis' octave='5'  /> 
+	</letter> 
+	<letter name='i' > 
+	 	<note name='fis' octave='6'  /> 
+	</letter> 
+	<letter name='j' > 
+	 	<note name='e' octave='5'  /> 
+	</letter> 
+	<letter name='k' > 
+	 	<note name='g' octave='5'  /> 
+	</letter> 
+	<letter name='l' > 
+	 	<note name='ais' octave='5'  /> 
+	</letter> 
+	<letter name='m' > 
+	 	<note name='f' octave='5'  />
+	</letter> 
+	<letter name='n' > 
+	 	<note name='d' octave='5'  /> 
+	</letter> 
+	<letter name='o' > 
+	 	<note name='a' octave='6'  /> 
+
+	</letter>
+	<letter name='p' > 
+	 	<note name='c' octave='6'  /> 
+	</letter> 
+	<letter name='q' > 
+	 	<note name='c' octave='3'  /> 
+	</letter> 
+	<letter name='r' > 
+	 	<note name='a' octave='4'  /> 
+	</letter> 
+	<letter name='s' > 
+	 	<note name='cis' octave='4'  /> 	 	
+	</letter> 
+	<letter name='t' > 
+	 	<note name='a' octave='5'  /> 
+	</letter> 
+	<letter name='u' > 
+	 	<note name='dis' octave='6'  /> 
+	</letter> 
+	<letter name='v' > 
+	 	<note name='gis' octave='4'  /> 
+	</letter> 
+	<letter name='w' > 
+	 	<note name='dis' octave='4'  /> 
+	</letter> 
+	<letter name='x' > 
+	 	<note name='d' octave='4'  /> 
+	</letter> 
+	<letter name='y' > 
+	 	<note name='c' octave='5'  /> 
+	</letter> 
+	<letter name='z' > 
+	 	<note name='h' octave='3'  /> 
+	</letter> 
+	<letter name=',' > 
+	 	<note name='h' octave='3'  /> 
+	</letter> 
+	<letter name='.' > 
+	 	<note name='h' octave='3'  /> 
+	</letter> 
+	<letter name='BACKSPACE' > 
+	 	<note name='h' octave='6'  /> 
+	</letter> 
+	<letter name='ENTER' > 
+	 	<note name='cis' octave='6'  /> 
+	</letter>
+
+
+	<ngram name='the'> 
+	 	<chord> 
+ 	 	 	<cnote name='g' position='1'/> 
+	 	 	<cnote name='b' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='that'> 
+	 	<chord> 
+ 	 	 	<cnote name='e' position='1'/> 
+	 	 	<cnote name='g' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='th'> 
+	 	<chord> 
+ 	 	 	<cnote name='g' position='1'/> 
+	 	 	<cnote name='ais' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='and'> 
+	 	<chord> 
+ 	 	 	<cnote name='fis' position='1'/> 
+	 	 	<cnote name='a' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='to'> 
+	 	<chord> 
+ 	 	 	<cnote name='dis' position='1'/> 
+	 	 	<cnote name='g' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='in'> 
+	 	<chord> 
+ 	 	 	<cnote name='b' position='1'/> 
+	 	 	<cnote name='d' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='ment'> 
+	 	<chord> 
+ 	 	 	<cnote name='f' position='1'/> 
+	 	 	<cnote name='a' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='with'> 
+	 	<chord> 
+ 	 	 	<cnote name='ais' position='1'/> 
+	 	 	<cnote name='d' position='2'/> 
+	 	</chord> 
+ 	</ngram>  	
+ 	<ngram name='ing'> 
+	 	<chord> 
+ 	 	 	<cnote name='c' position='1'/> 
+	 	 	<cnote name='dis' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='this'> 
+	 	<chord> 
+ 	 	 	<cnote name='c' position='1'/> 
+	 	 	<cnote name='e' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='which'> 
+	 	<chord> 
+ 	 	 	<cnote name='a' position='1'/> 
+	 	 	<cnote name='c' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='there'> 
+	 	<chord> 
+ 	 	 	<cnote name='c' position='1'/> 
+	 	 	<cnote name='g' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='up'> 
+	 	<chord> 
+ 	 	 	<cnote name='d' position='1'/> 
+	 	 	<cnote name='f' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='where'> 
+	 	<chord> 
+ 	 	 	<cnote name='f' position='1'/> 
+	 	 	<cnote name='c' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='pl'> 
+	 	<chord> 
+ 	 	 	<cnote name='cis' position='1'/> 
+	 	 	<cnote name='e' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='him'> 
+	 	<chord> 
+ 	 	 	<cnote name='d' position='1'/> 
+	 	 	<cnote name='g' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='have'> 
+	 	<chord> 
+ 	 	 	<cnote name='e' position='1'/> 
+	 	 	<cnote name='b' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='able'> 
+	 	<chord> 
+ 	 	 	<cnote name='d' position='1'/> 
+	 	 	<cnote name='a' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='for'> 
+	 	<chord> 
+ 	 	 	<cnote name='g' position='1'/> 
+	 	 	<cnote name='d' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='use'> 
+	 	<chord> 
+ 	 	 	<cnote name='fis' position='1'/> 
+	 	 	<cnote name='d' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='over'> 
+	 	<chord> 
+ 	 	 	<cnote name='d' position='1'/> 
+	 	 	<cnote name='b' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='inter'> 
+	 	<chord> 
+ 	 	 	<cnote name='g' position='1'/> 
+	 	 	<cnote name='c' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='but'> 
+	 	<chord> 
+ 	 	 	<cnote name='e' position='1'/> 
+	 	 	<cnote name='a' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='not'> 
+	 	<chord> 
+ 	 	 	<cnote name='f' position='1'/> 
+	 	 	<cnote name='d' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='ent'> 
+	 	<chord> 
+ 	 	 	<cnote name='b' position='1'/> 
+	 	 	<cnote name='g' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='would'> 
+	 	<chord> 
+ 	 	 	<cnote name='dis' position='1'/> 
+	 	 	<cnote name='c' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='what'> 
+	 	<chord> 
+ 	 	 	<cnote name='C' position='1'/> 
+	 	 	<cnote name='C' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='by'> 
+	 	<chord> 
+ 	 	 	<cnote name='D' position='1'/> 
+	 	 	<cnote name='D' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='will'> 
+	 	<chord> 
+ 	 	 	<cnote name='F' position='1'/> 
+	 	 	<cnote name='F' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='other'> 
+	 	<chord> 
+ 	 	 	<cnote name='A' position='1'/> 
+	 	 	<cnote name='A' position='2'/> 
+	 	</chord> 
+ 	</ngram> 
+ 	<ngram name='ter'> 
+	 	<chord> 
+ 	 	 	<cnote name='B' position='1'/> 
+	 	 	<cnote name='B' position='2'/> 
+	 	</chord> 
+ 	</ngram>  	
+ 	<word name='nes'> 
+	 	<chord> 
+ 	 	 	<cnote name='G' position='1'/> 
+	 	 	<cnote name='E' position='2'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='one'> 
+	 	<chord> 
+ 	 	 	<cnote name='C' position='1'/> 
+	 	 	<cnote name='gis' position='2'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='from'> 
+	 	<chord> 
+ 	 	 	<cnote name='B' position='1'/> 
+	 	 	<cnote name='E' position='2'/> 
+	 	 	<cnote name='Gis' position='3'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='ver'> 
+	 	<chord> 
+ 	 	 	<cnote name='ais' position='1'/> 
+	 	 	<cnote name='D' position='2'/> 
+	 	 	<cnote name='G' position='3'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='between'> 
+	 	<chord> 
+ 	 	 	<cnote name='C' position='1'/> 
+	 	 	<cnote name='A' position='2'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='these'> 
+	 	<chord> 
+ 	 	 	<cnote name='G' position='1'/> 
+	 	 	<cnote name='B' position='2'/> 
+			<cnote name='D' position='3'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='tion'> 
+	 	<chord> 
+ 	 	 	<cnote name='F' position='1'/> 
+	 	 	<cnote name='ais' position='2'/> 
+	 	 	<cnote name='D' position='3'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='ate'> 
+	 	<chord> 
+ 	 	 	<cnote name='G' position='1'/> 
+	 	 	<cnote name='dis' position='2'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='because'> 
+	 	<chord> 
+ 	 	 	<cnote name='E' position='1'/> 
+	 	 	<cnote name='C' position='2'/> 
+	 	</chord> 
+ 	</word>  	
+ 	<word name='yes'> 
+	 	<chord> 
+ 	 	 	<cnote name='E' position='1'/> 
+	 	 	<cnote name='Gis' position='2'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='make'> 
+	 	<chord> 
+ 	 	 	<cnote name='G' position='1'/> 
+	 	 	<cnote name='C' position='2'/> 
+	 	 	<cnote name='E' position='3'/> 
+	 	</chord> 
+ 	</word>  	
+ 	<word name='ly'> 
+	 	<chord> 
+ 	 	 	<cnote name='D' position='1'/> 
+	 	 	<cnote name='ais' position='2'/> 
+	 	</chord> 
+ 	</word>  	
+	<word name='con'> 
+	 	<chord> 
+ 	 	 	<cnote name='E' position='1'/> 
+	 	 	<cnote name='G' position='2'/> 
+	 	 	<cnote name='B' position='3'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='could'> 
+	 	<chord> 
+ 	 	 	<cnote name='E' position='1'/> 
+	 	 	<cnote name='Cis' position='2'/> 
+	 	</chord> 
+ 	</word>  	
+ 	<word name='of'> 
+	 	<chord> 
+ 	 	 	<cnote name='Dis' position='1'/> 
+	 	 	<cnote name='B' position='2'/> 
+	 	</chord> 
+ 	</word>  		
+ 	<word name='take'> 
+	 	<chord> 
+ 	 	 	<cnote name='C' position='1'/> 
+	 	 	<cnote name='E' position='2'/> 
+	 	 	<cnote name='G' position='3'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='ght'> 
+	 	<chord> 
+ 	 	 	<cnote name='B' position='1'/> 
+	 	 	<cnote name='E' position='2'/> 
+	 	 	<cnote name='G' position='3'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='how'> 
+	 	<chord> 
+ 	 	 	<cnote name='C' position='1'/> 
+	 	 	<cnote name='E' position='2'/> 
+	 	 	<cnote name='A' position='3'/> 
+	 	</chord> 
+ 	</word>  	
+ 	<word name='about'> 
+	 	<chord> 
+ 	 	 	<cnote name='Fis' position='1'/> 
+	 	 	<cnote name='B' position='2'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='when'> 
+	 	<chord> 
+ 	 	 	<cnote name='E' position='1'/> 
+	 	 	<cnote name='A' position='2'/> 
+	 	 	<cnote name='C' position='3'/> 
+	 	</chord> 
+ 	</word>  	
+ 	<word name='ted'> 
+	 	<chord> 
+ 	 	 	<cnote name='B' position='1'/> 
+	 	 	<cnote name='E' position='2'/> 
+	 	</chord> 
+ 	</word>  	
+ 	<word name='like'> 
+	 	<chord> 
+ 	 	 	<cnote name='F' position='1'/> 
+	 	 	<cnote name='Ais' position='2'/> 
+	 	</chord> 
+ 	</word>  	
+ 	<word name='her'> 
+	 	<chord> 
+ 	 	 	<cnote name='ais' position='1'/> 
+	 	 	<cnote name='F' position='2'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='just'> 
+	 	<chord> 
+ 	 	 	<cnote name='B' position='1'/> 
+	 	 	<cnote name='Fis' position='2'/> 
+	 	</chord> 
+ 	</word>
+ 	<word name='good'> 
+	 	<chord> 
+ 	 	 	<cnote name='E' position='1'/> 
+	 	 	<cnote name='G' position='2'/> 
+	 	 	<cnote name='C' position='3'/> 
+	 	</chord> 
+ 	</word> 
+ 	<word name='many'> 
+	 	<chord> 
+ 	 	 	<cnote name='A' position='1'/> 
+	 	 	<cnote name='D' position='2'/> 
+	 	</chord> 
+ 	</word> 
+  </mapping> 
+ 
