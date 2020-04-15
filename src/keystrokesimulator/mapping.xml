@@ -18,14 +18,9 @@
 	 ]> 
  <mapping> <!-- nice chords left: D-FIS, GIS-C, A-C-E -->
 	<letter name='SPACE' > 
-	 	<note name='SPACE' octave='-1'  />
-		<note name='g' octave='3'  />
-		<note name='a' octave='3'  />
-		<note name='f' octave='3'  />
-		<note name='d' octave='6'  />
-	</letter>
-
- 	<letter name='a' >
+	 	<note name='SPACE' octave='-1'  /> 	 	
+	</letter> 
+ 	<letter name='a' > 
 	 	<note name='b' octave='3'  /> 
 	</letter> 
 	<letter name='b' > 
@@ -41,7 +36,7 @@
 	 	<note name='fis' octave='4'  /> 
 	</letter>
 	<letter name='f' > 
-	 	<note name='c' octave='4'  /> 
+	 	<note name='g' octave='4'  /> 
 	</letter> 
 	<letter name='g' > 
 	 	<note name='b' octave='4'  /> 
@@ -50,7 +45,7 @@
 	 	<note name='cis' octave='5'  /> 
 	</letter> 
 	<letter name='i' > 
-	 	<note name='fis' octave='6'  /> 
+	 	<note name='fis' octave='5'  /> 
 	</letter> 
 	<letter name='j' > 
 	 	<note name='e' octave='5'  /> 
@@ -68,7 +63,7 @@
 	 	<note name='d' octave='5'  /> 
 	</letter> 
 	<letter name='o' > 
-	 	<note name='a' octave='6'  />
+	 	<note name='a' octave='5'  />
 	</letter>
 	<letter name='p' > 
 	 	<note name='c' octave='6'  /> 
@@ -83,10 +78,10 @@
 	 	<note name='cis' octave='4'  /> 	 	
 	</letter> 
 	<letter name='t' > 
-	 	<note name='a' octave='5'  /> 
+	 	<note name='dis' octave='5'  /> 
 	</letter> 
 	<letter name='u' > 
-	 	<note name='dis' octave='6'  /> 
+	 	<note name='dis' octave='5'  /> 
 	</letter> 
 	<letter name='v' > 
 	 	<note name='gis' octave='4'  /> 
@@ -114,7 +109,7 @@
 	</letter> 
 	<letter name='ENTER' > 
 	 	<note name='cis' octave='6'  /> 
-	</letter>
+	</letter> 
 
 
 	<ngram name='the'> 

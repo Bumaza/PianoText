@@ -108,7 +108,7 @@ public class Mapping {
    }
 
    public static int getNoteValue(String keyName, int keyOctave) {
-      if (keyName.equals("SPACE")) {
+      if (keyName.equals("SPACE") || keyName.equals("BACKSPACE") || keyName.equals("ENTER")) {
          return -1;
       } else {
          int index = noteNames.indexOf(keyName);
