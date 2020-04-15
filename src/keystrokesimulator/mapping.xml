@@ -39,7 +39,7 @@
 	</letter> 
 	<letter name='e' > 
 	 	<note name='fis' octave='4'  /> 
-	</letter> sah
+	</letter>
 	<letter name='f' > 
 	 	<note name='c' octave='4'  /> 
 	</letter> 
@@ -68,8 +68,7 @@
 	 	<note name='d' octave='5'  /> 
 	</letter> 
 	<letter name='o' > 
-	 	<note name='a' octave='6'  /> 
-
+	 	<note name='a' octave='6'  />
 	</letter>
 	<letter name='p' > 
 	 	<note name='c' octave='6'  /> 
